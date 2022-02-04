@@ -9,8 +9,16 @@
 
         <!-- 폰트어썸 -->
     <script src="https://kit.fontawesome.com/ed2b41d020.js" crossorigin="anonymous"></script>
+
+    <!-- 스와이퍼 -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- 내 css,js -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalizing.css">
     <script src="./js/script.js"></script>
     <title>IWANNABE</title>
 </head>
@@ -52,17 +60,239 @@
         </div>
     </div>
 
-    <div class="main-slide-wrap">
-        <a href="#">
-            <div class="left">
-                <img src="./img/main-slide.jpg" alt="">
-             </div>
-             <div class="right">
-                 <img src="./img/main-slide02.jpg" alt="">
-                 <img src="./img/main-slide03.jpg" alt="">
-             </div> 
-        </a>
+    <div class="main-slide-wrap swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+                <div class="left-box">
+                    <a href="#"><img src="./img/main-slide1.jpg" alt=""></a>
+                </div>
+                <div class="right-box">
+                        <div class="right right01">
+                            <a href="#">
+                                <div class="img-box">
+                                    <img src="./img/main-slide02.jpg" alt="">
+                                </div>
+                                <div class="text-box overlay">
+                                    <div class="title">
+                                        <h1>FULLFACE
+                                            <br>FILLING</h1>
+                                    </div>
+                                    <div class="text">
+                                        <p>피부의 지속적인 콜라겐 생성, 
+                                            튼튼한 피부 방어력, <br>
+                                            피부재생, 노화개선 한번에 해결하세요
+                                        </p>
+                                        <div class="more row">
+                                            <p class="cell">자세히 보러가기</p>
+                                            
+                                        <i class="fas fa-long-arrow-alt-right cell"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="right right02">
+                            <a href="#">
+                                <div class="img-box">
+                                    <img src="./img/main-slide03.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                </div> 
+            </div>
+            <!-- <div class="swiper-slide slide-2">
+                <div class="left-box">
+                    <a href="#"><img src="./img/main-slide1.jpg" alt=""></a>
+                    </div>
+                    <div class="right-box">
+                        <div class="right right01">
+                            <a href="#">
+                                <div class="img-box">
+                                    <img src="./img/main-slide02.jpg" alt="">
+                                </div>
+                                <div class="text-box overlay">
+                                    <div class="title">
+                                        <h1>FULLFACE
+                                            <br>FILLING</h1>
+                                    </div>
+                                    <div class="text">
+                                        <p>피부의 지속적인 콜라겐 생성, 
+                                            튼튼한 피부 방어력, <br>
+                                            피부재생, 노화개선 한번에 해결하세요
+                                        </p>
+
+                                        <p>자세히 보러가기</p>
+                                        <i class="fas fa-long-arrow-alt-right cell"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="right right02">
+                            <a href="#">
+                                <div class="img-box">
+                                    <img src="./img/main-slide03.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+            </div> -->
+        </div>
+        
+            <!-- 페이지 -->
+        <div class="swiper-pagination"></div>
+
+            <!-- 화살표 -->
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+    </div>
+
+    <div class="section01-headline">
+        <div class="title">
+            <h2>IWANNABE CHOICE</h2>
             
+        </div>
+        <div class="text">
+            <p>고객 만족도와 의료진 의견을 반영하여 자신있게<br>
+                추천드리는 아이워너비 추천 시술</p>
+        </div>
+    </div>
+    <div class="section01 con row">
+        <a href="#">
+            <div class="content-box content-box01 cell">
+                <div class="img-box">
+                        <img src="./img/section01-01.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <div class="text">
+                        <h2>피코 토닝</h2>
+                        <p>FDA, KFDA 승인, 주변조직 손상없이<br>
+                            정확한 타겟팅으로 피부토닝</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="content-box content-box02 cell">
+                <div class="img-box">
+                        <img src="./img/section01-02.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <div class="text">
+                        <h2>진정관리</h2>
+                        <p>피부 진정 재생을 위한 꼼꼼한 스킨케어</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="content-box content-box03 cell">
+                <div class="img-box">
+                        <img src="./img/section01-03.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <div class="text">
+                        <h2>입술 필러</h2>
+                        <p>더 또렷해진 입술윤곽<br>
+                            더 유혹적인 입매</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="section02 row">
+        <div class="text-box cell">
+            <h2>BEST REVIEW</h2>
+            <p>고객님들의 들려주는 생생한 관리 후기! <br>
+                수많은 고객님들의 후기를 통해 
+                노하우를 입증하는 아이워너비의원 입니다.</p>
+                <a href="#">
+                    <div class="more row">
+                        <p class="cell">전체 리뷰 보기</p>
+                        <i class="fas fa-long-arrow-alt-right cell-r"></i>
+                    </div> 
+                </a>  
+        </div>
+        <div class="content cell-r">
+            <div class="content-line"></div>
+            <div class="img-wrap row">
+                <div class="img-box img01">
+                    <!-- <img src="./img/section02-01.jpg" alt=""> -->
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h2>윈터님의 리뷰</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-box img02">
+                    <!-- <img src="./img/section02-02.jpg" alt=""> -->
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h2>송강님의 리뷰</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-box img03">
+                    <!-- <img src="./img/section02-03.jpg" alt=""> -->
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h2>한소희님의 리뷰</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-box img04">
+                    <!-- <img src="./img/section02-04.jpg" alt=""> -->
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h2>김제니님의 리뷰</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-box img05">
+                    <!-- <img src="./img/section02-05.jpg" alt=""> -->
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h2>카리나님의 리뷰</h2>
+                                <p>리뷰 보러가기&emsp;<i class="fas fa-long-arrow-alt-right cell-r"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-box img06">
+                    <!-- <img src="./img/section02-06.jpg" alt=""> -->
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text-box">
+                                <h2>뷔님의 리뷰</h2>
+                                <p>리뷰 보러가기&emsp;<i class="fas fa-long-arrow-alt-right cell-r"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section03">
+        <div class="banner-wrap">
+        </div>
     </div>
 </body>
 </html>
