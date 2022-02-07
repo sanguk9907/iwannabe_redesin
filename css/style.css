@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "NanumBarunGothic","NanumBarunGothicBold","NanumBarunGothicLight","NanumBarunGothicUltraLight";
+    font-family: "NanumBarunGothic","NanumBarunGothicBold";
 }
     
 ul , li{
@@ -17,10 +17,6 @@ p , a{
 
 img{
     display: block;
-}
-
-h1{
-    font-family: "Cafe24Danjunghae";
 }
 
 /* 라이브러리 */
@@ -50,16 +46,6 @@ h1{
 }
 
 @font-face {
-    font-family: "NanumBarunGothicUltraLight";
-    src: url(../font/NanumBarunGothicUltraLight.otf);
-}
-
-@font-face {
-    font-family: "NanumBarunGothicLight";
-    src: url(../font/NanumBarunGothicLight.otf);
-}
-
-@font-face {
     font-family: "NanumBarunGothicBold";
     src: url(../font/NanumBarunGothicBold.otf);
 }
@@ -67,6 +53,11 @@ h1{
 @font-face {
     font-family: "Cafe24Danjunghae";
     src: url(../font/Cafe24Danjunghae.ttf);
+}
+
+@font-face {
+    font-family: "tway_air";
+    src: url(../font/tway_air.ttf);
 }
 
 
@@ -264,12 +255,15 @@ h1{
 
 .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .title{
     font-size: 50px;
-    font-weight: 300;
     height: 0;
     overflow: hidden;
     transition: 1s;
     transition-delay: 2s;
-    /* 폰트 바꿔야됨 */
+}
+
+.main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .title > h1{
+    font-family: "Cafe24Danjunghae";
+    font-weight: 300;
 }
 
 .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .text{
@@ -458,6 +452,11 @@ h1{
     box-sizing: border-box;
     padding: 0 20px;
     margin-top: 30px;
+    transition: 0.3s;
+}
+
+.section02 > .text-box > a > .more:hover{
+    box-shadow: 0px 0px 5px #888;
 }
 
 .section02 > .text-box > a > .more i{
@@ -508,7 +507,7 @@ h1{
     bottom: 0;
     transition: 0.5s;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 20px;
     color: #fff;
 }
 
@@ -593,5 +592,63 @@ h1{
     overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section03 > .banner-wrap > .text-box{
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section03 > .banner-wrap > .text-box > .title{
+    margin-top: 40px;    
+}
+
+.section03 > .banner-wrap > .text-box > .title > h2{
+    font-size: 50px;
+}
+
+.section03 > .banner-wrap > .text-box > .title > h3{
+    font-size: 20px;
+}
+
+.section03 > .banner-wrap > .text-box > .text{
+    position: absolute;
+    bottom: 60px;
+}
+
+.section03 > .banner-wrap > .text-box > .text > h2{
+    font-size: 100px;
+    font-family: "tway_air";
+    font-weight: 100;
+}
+
+.section03 > .banner-wrap > .text-box > .text > p{
+    line-height: 30px;
+}
+
+.section03 > .banner-wrap > .text-box > .text > a > .more{
+    width: 260px;
+    line-height: 40px;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.section03 > .banner-wrap > .text-box > .text > a > .more > i{
+    line-height: 40px;
+}
+
+.section03 > .banner-wrap > .text-box > .text > a > .more:hover{
+    box-shadow: 0px 0px 5px #888;
 }
