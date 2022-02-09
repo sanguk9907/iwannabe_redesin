@@ -73,7 +73,7 @@ img{
 .top-bar-wrap{
     width: 100%;
     height: 220px;
-    background-color: fff;
+    background-color: #fff;
     position: fixed;
     z-index: 100;
     border-bottom: 1px solid black;
@@ -81,7 +81,6 @@ img{
 
 .top-bar-wrap > .kakao-banner{
     width: 100%;
-    height: 40px;
     line-height: 40px;
     background-color: #FFCC16;
     text-align: center;
@@ -110,8 +109,8 @@ img{
 
 
 .top-bar-wrap > .top-bar > .top-box{
-    width: 1160px;
-    height: 80px;
+    width: 100%;
+    line-height: 80px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -147,8 +146,12 @@ img{
     margin-right: 10px;
 }
 
+.top-bar-wrap > .top-bar > .top-box > .icon-box > a > span:hover{
+    opacity: 0.5;
+}
+
 .top-bar-wrap > .top-bar > .nav{
-    width: 1200px;
+    width: 100%;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -258,29 +261,38 @@ img{
 }
 
 .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .title{
-    font-size: 50px;
     height: 0;
     overflow: hidden;
     transition: 1s;
     transition-delay: 2s;
+    position: absolute;
+    top: 0;
 }
 
 .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .title > h1{
+    font-size: 80px;
     font-family: "J-Regular";
     font-weight: 300;
 }
 
 .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .text{
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-top: 50px;
     opacity: 0;
     visibility: hidden;
     transition: 1s;
     transition-delay: 3s;
+    z-index: 100;
+    position: absolute;
+    top: 40%;
+}
+
+.main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .text > p{
+    font-size: 1.1em;
 }
 
 .main-slide-wrap > .swiper-wrapper > .swiper-slide.swiper-slide-active > .right-box > .right > a > .overlay > .title{
-    height: 50%;
+    height: 100%;
 }
 .main-slide-wrap > .swiper-wrapper > .swiper-slide.swiper-slide-active > .right-box > .right > a > .overlay > .text{
     opacity: 1;
@@ -328,7 +340,7 @@ img{
 } */
 
 .headline > .title > h2{
-    font-size: 30px;
+    font-size: 30px; 
     font-weight: 500;
 }
 
@@ -337,15 +349,15 @@ img{
 }
 
 .section01 > a > .content-box{
-    width: 1100px;
-    height: 430px;
-    /* background-color: #ddd; */
+    width: calc(100% - 100px);
+    /* height: 430px; */
+    padding-bottom: 39.09%;
     margin-top: 120px;
     position: relative;
 }
 
 .section01 > a > .content-box > .img-box{
-    max-width: 600px;
+    max-width: 54.54%;
     position: absolute;
     z-index: 10;
 }
@@ -355,8 +367,8 @@ img{
 }
 
 .section01 > a > .content-box > .text-box{
-    width: 820px;
-    height: 400px;
+    width: 74.54%; 
+    height: calc(100% - 30px);
     border: 1px solid #333;
     position: absolute;
 }
@@ -370,6 +382,10 @@ img{
 }
 
 .section01 > a > .content-box > .text-box > .text > h2{
+    margin-bottom: 20px;
+}
+
+.section01 > a > .content-box > .text-box > .text > p{
     margin-bottom: 20px;
 }
 
@@ -427,6 +443,7 @@ img{
 }
 
 .section02 > .text-box{
+    width: calc(38% - 50px);
     margin-left: 50px;
 }
 
@@ -436,7 +453,7 @@ img{
 }
 
 .section02 > .text-box > a > .more{
-    width: 350px;
+    width: 50%;
     line-height: 50px;
     border: 1px solid #333;
     border-radius: 50px;
@@ -455,9 +472,11 @@ img{
 }
 
 .section02 > .content{
-    width: 1190px;
-    height: 780px;
+    width: 62%;
+    /* height: 780px; */
+    padding-bottom: 65.54%;
     position: relative;
+    float: right;
 }
 
 .section02 > .content > .content-line{
@@ -577,7 +596,8 @@ img{
 
 .banner-wrap{
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
+    padding-bottom: 20%;
     background-image: url(../img/benner.jpg);
     overflow: hidden;
     background-attachment: fixed;
@@ -587,17 +607,10 @@ img{
     position: relative;
 }
 
-.section03 > .banner-wrap > .text-box{
-    width: 1200px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 
 .section03 > .banner-wrap > .text-box > .title{
-    margin-top: 40px;    
+    margin-top: 4%;    
 }
 
 .section03 > .banner-wrap > .text-box > .title > h2{
@@ -610,10 +623,11 @@ img{
 
 .section03 > .banner-wrap > .text-box > .text{
     position: absolute;
-    bottom: 60px;
+    bottom: 10%;
 }
 
 .section03 > .banner-wrap > .text-box > .text > h2{
+    height: 50px;
     font-size: 100px;
     font-family: "tway_air";
     font-weight: 100;
@@ -633,6 +647,7 @@ img{
     padding: 0 20px;
     margin-top: 20px;
     margin-left: -10px;
+    transition: 0.5s;
 }
 
 .section03 > .banner-wrap > .text-box > .text > a > .more > i{
@@ -703,7 +718,6 @@ img{
 }
 
 .footer-wrap > .footer-menu > ul{
-    width: 1100px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -764,4 +778,60 @@ img{
 
 .footer-wrap > .content > .address > .text > ul > li > p{
     font-family: "SUIT-Light";
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .headline > .title > h2{
+        font-size: 2.5vw; 
+        font-weight: 300;
+    }
+
+    .headline > .text > p{
+        font-size: 1.3vw;
+    }
+
+    .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .title > h1{
+        font-size: 5.0vw;
+    }
+    
+    .main-slide-wrap > .swiper-wrapper > .swiper-slide > .right-box > .right > a > .overlay > .text > p{
+        font-size: 1.5vw;
+    }
+
+    .section01 > a > .content-box > .text-box > .text > h2{
+        font-size: 2vw;
+    }
+    
+    .section01 > a > .content-box > .text-box > .text > p{
+        font-size: 1.4vw;
+    }
+
+    .section02 > .text-box h2{
+        font-size: 4.2vw;
+    }
+
+    .section02 > .text-box p{
+        font-size: 1.3vw;
+    }
+
+    .section03 > .banner-wrap > .text-box > .title > h2{
+        font-size: 4.3vw;
+    }
+    
+    .section03 > .banner-wrap > .text-box > .title > h3{
+        font-size: 1.6vw;
+    }
+    
+    .section03 > .banner-wrap > .text-box > .text > h2{
+        font-size: 8vw;
+        height: 30px;
+    }
+
+    .section03 > .banner-wrap > .text-box > .text > p{
+        font-size: 1.3vw;
+    }
 }
