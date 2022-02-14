@@ -82,7 +82,7 @@ img{
 .top-bar-wrap > .kakao-banner{
     width: 100%;
     line-height: 40px;
-    background-color: #FFCC16;
+    background-color: #FFC000;
     text-align: center;
     position: absolute;
     top: 0;
@@ -125,7 +125,7 @@ img{
 }
 
 .top-bar-wrap > .top-bar > .top-box > .logo{
-    width: 300px;
+    width: 228px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -168,13 +168,17 @@ img{
     transition: 0.5s;
 }
 
+.top-bar-wrap > .top-bar > .nav > ul > li:hover{
+    color: #2C71FA;
+}
+
 .top-bar-wrap > .top-bar > .nav > ul > li::after{
     width: 5px;
     height: 5px;
     border-radius: 10px;
     display: block;
     content: "";
-    background-color: #A3DA8D;
+    background-color: #2C71FA;
     position: absolute;
     top: -5px;
     left: 2px;
@@ -539,9 +543,16 @@ img{
 }
 
 .section02 > .content > .img-wrap > .img-box > a > .overlay > .text-box > p{
+    width: 90%;
     display: block;
     position: absolute;
     bottom: 50px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -553,6 +564,7 @@ img{
     top:0;
     background-image: url(../img/section02-01.jpg);
 }
+
 .section02 > .content > .img-wrap > .img02{
     width: 40%;
     height: 70%;
