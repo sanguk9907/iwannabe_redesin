@@ -66,5 +66,17 @@ $(document).ready(function(){
         $(".top-bar-wrap > .top-bar > .top-box > .icon-box > a > .search-icon").removeClass("active");
       });
 
+      $(window).scroll(function(){
+
+        var height = $(document).scrollTop();
+
+        if(height >= 220){
+          $(".top-bar-wrap").addClass("active");
+        }else{
+          $(".top-bar-wrap").removeClass("active");
+        };
+
+      });
+
 
 });
