@@ -23,6 +23,8 @@ $(document).ready(function(){
         
       });
 
+      
+
       $(".kakao-banner i").click(function(){
           $(".kakao-banner").addClass("active")
       });
@@ -78,5 +80,10 @@ $(document).ready(function(){
 
       });
 
+
+      $(".top-banner > .overlay > .txt-box > .best5-menu > li").click(function(){
+        $(".top-banner > .overlay > .txt-box > .best5-menu > li").removeClass("active");
+        $(this).addClass("active");
+      });
 
 });
